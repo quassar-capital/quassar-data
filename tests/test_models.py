@@ -1,8 +1,7 @@
-
 """Contract tests for point-in-time financial observations."""
 
 from dataclasses import FrozenInstanceError, replace
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from decimal import Decimal
 
 import pytest
@@ -10,9 +9,7 @@ import pytest
 from quassar_data.models import FinancialObservation
 
 
-UTC = timezone.utc
 BASE = datetime(2025, 1, 15, 14, 30, tzinfo=UTC)
-
 
 def observation(**overrides: object) -> FinancialObservation:
     """Construct a valid observation, overriding only the field under test."""
