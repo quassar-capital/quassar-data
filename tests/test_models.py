@@ -8,7 +8,6 @@ import pytest
 
 from quassar_data.models import FinancialObservation
 
-
 BASE = datetime(2025, 1, 15, 14, 30, tzinfo=UTC)
 
 def observation(**overrides: object) -> FinancialObservation:
