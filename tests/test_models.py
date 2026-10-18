@@ -1,7 +1,7 @@
 """Contract tests for point-in-time financial observations."""
 
 from dataclasses import FrozenInstanceError, replace
-from datetime import UTC, datetime, timedelta
+from datetime import UTC, datetime, timedelta, timezone
 from decimal import Decimal
 
 import pytest
