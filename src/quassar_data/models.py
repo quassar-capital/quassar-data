@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from decimal import Decimal
 
 _IDENTIFIER = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:/-]{0,127}$", re.ASCII)
@@ -26,7 +26,7 @@ def _timestamp(value: datetime, field: str) -> datetime:
         or value.utcoffset() is None
     ):
         raise ValueError(f"{field} must be a timezone-aware datetime")
-    return value.astimezone(timezone.utc)
+    return value.astimezone(UTC)
 
 
 @dataclass(frozen=True, slots=True, kw_only=True)
