@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "repository": "quassar-data",
+  "research": [
+    {
+      "id": "01",
+      "title": "Point-in-Time Financial Data Integrity",
+      "description": "Financial data representation, temporal consistency, and validation.",
+      "implementation": [
+        "src/quassar_data/models.py"
+      ],
+      "tests": [
+        "tests/test_models.py"
+      ],
+      "experiments": []
+    }
+  ]
+}

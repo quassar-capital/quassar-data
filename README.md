@@ -10,6 +10,24 @@ Its research scope encompasses financial time-series processing, data validation
 
 The framework emphasizes accuracy, traceability, statistical integrity, computational reliability, reproducibility, and responsible handling of financial information.
 
+<!-- RESEARCH_INDEX_START -->
+## Research Programs & Scientific Implementations
+
+The following research programs have corresponding scientific implementations in this repository.
+
+### Research 01 — Point-in-Time Financial Data Integrity
+
+Financial data representation, temporal consistency, and validation.
+
+**Scientific implementation**
+
+- [`models.py`](src/quassar_data/models.py)
+
+**Automated validation**
+
+- [`test_models.py`](tests/test_models.py)
+<!-- RESEARCH_INDEX_END -->
+
 ## Research Domains
 
 ### Financial Data Engineering
