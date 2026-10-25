@@ -1,3 +1,4 @@
+
 {
   "schema_version": 1,
   "repository": "quassar-data",
@@ -11,6 +12,19 @@
       ],
       "tests": [
         "tests/test_models.py"
+      ],
+      "experiments": []
+    },
+    {
+      "id": "02",
+      "title": "Algebraic Coding and Guruswami–Sudan Decoding",
+      "description": "Exact finite-field arithmetic, Reed–Solomon coding, algebraic interpolation, and list-decoding research.",
+      "implementation": [
+        "research_02/rust/Cargo.toml",
+        "research_02/rust/src/lib.rs"
+      ],
+      "tests": [
+        "research_02/rust/src/lib.rs"
       ],
       "experiments": []
     }

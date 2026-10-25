@@ -22,8 +22,17 @@ def main():
     if not entries:
         raise ValueError("Research catalog cannot be empty.")
 
+    
     identifiers = set()
+
+    implemented_ids = {
+        path.name.removeprefix("research_")
+        for path in ROOT.glob("research_[0-9][0-9]")
+        if path.is_dir()
+    }
+
     lines = [
+
         "## Research Programs & Scientific Implementations",
         "",
         "The following research programs have corresponding scientific implementations in this repository.",
@@ -73,6 +82,13 @@ def main():
                 lines.append(f"- [`{path.name}`]({url})")
 
             lines.append("")
+
+    missing = implemented_ids - identifiers
+    if missing:
+        raise ValueError(
+            f"Unregistered research directories: {sorted(missing)}"
+        )
+
 
     generated = "\n".join(lines).rstrip()
     content = README.read_text(encoding="utf-8")
