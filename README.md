@@ -26,6 +26,19 @@ Financial data representation, temporal consistency, and validation.
 **Automated validation**
 
 - [`test_models.py`](tests/test_models.py)
+
+### Research 02 — Algebraic Coding and Guruswami–Sudan Decoding
+
+Exact finite-field arithmetic, Reed–Solomon coding, algebraic interpolation, and list-decoding research.
+
+**Scientific implementation**
+
+- [`Cargo.toml`](research_02/rust/Cargo.toml)
+- [`lib.rs`](research_02/rust/src/lib.rs)
+
+**Automated validation**
+
+- [`lib.rs`](research_02/rust/src/lib.rs)
 <!-- RESEARCH_INDEX_END -->
 
 ## Research Domains
