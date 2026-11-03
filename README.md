@@ -49,6 +49,15 @@ Exact temporal difference constraints, feasibility certificates, and reconstruct
 - [`temporal_model.py`](research_03/python/temporal_model.py)
 - [`feasibility.py`](research_03/python/feasibility.py)
 - [`certificate_verifier.py`](research_03/python/certificate_verifier.py)
+- [`precedence.py`](research_03/python/precedence.py)
+
+**Automated validation**
+
+- [`test_research_03.py`](tests/test_research_03.py)
+
+**Research experiments**
+
+- [`experiments.py`](research_03/python/experiments.py)
 <!-- RESEARCH_INDEX_END -->
 
 ## Research Domains
