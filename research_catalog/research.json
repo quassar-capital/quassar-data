@@ -35,10 +35,15 @@
       "implementation": [
         "research_03/python/temporal_model.py",
         "research_03/python/feasibility.py",
-        "research_03/python/certificate_verifier.py"
+        "research_03/python/certificate_verifier.py",
+        "research_03/python/precedence.py"
       ],
-      "tests": [],
-      "experiments": []
+      "tests": [
+        "tests/test_research_03.py"
+      ],
+      "experiments": [
+        "research_03/python/experiments.py"
+      ]
     }
   ]
 }
