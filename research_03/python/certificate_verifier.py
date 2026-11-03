@@ -27,7 +27,7 @@ def verify_assignment(
     if any(type(value) is not int for value in assignment):
         return False
 
-    for event, time in zip(problem.events, assignment):
+    for event, time in zip(problem.events, assignment, strict=True):
         if not event.lower <= time <= event.upper:
             return False
 
