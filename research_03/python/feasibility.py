@@ -70,7 +70,9 @@ def _extract_negative_cycle(
     if sum(edges[index].weight for index in cycle) >= 0:
         raise RuntimeError("recovered cycle is not negative")
 
-    for current, following in zip(cycle, cycle[1:] + cycle[:1]):
+    for current, following in zip(
+        cycle, cycle[1:] + cycle[:1], strict=True
+    ):
         if edges[current].target != edges[following].source:
             raise RuntimeError("recovered cycle is not directed")
 
