@@ -68,7 +68,7 @@ class SyntheticScenario:
                 upper=center + scale * radius,
             )
             for index, (center, radius) in enumerate(
-                zip(self.centers, self.uncertainty),
+                zip(self.centers, self.uncertainty, strict=True),
                 start=1,
             )
         )
