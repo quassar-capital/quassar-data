@@ -357,7 +357,7 @@ def test_uncertainty_expansion_cannot_create_necessary_order() -> None:
                 center - scale * radius,
                 center + scale * radius,
             )
-            for center, radius in zip(centers, uncertainty)
+            for center, radius in zip(centers, uncertainty, strict=True)
         )
         result = reconstruct_precedence(problem(intervals))
 
