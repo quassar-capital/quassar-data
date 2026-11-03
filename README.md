@@ -39,6 +39,16 @@ Exact finite-field arithmetic, Reed–Solomon coding, algebraic interpolation, a
 **Automated validation**
 
 - [`lib.rs`](research_02/rust/src/lib.rs)
+
+### Research 03 — Temporal Consistency, Partial-Order Reconstruction, and Formal Certification of Asynchronous Financial Data
+
+Exact temporal difference constraints, feasibility certificates, and reconstruction of event precedence under bounded clock uncertainty.
+
+**Scientific implementation**
+
+- [`temporal_model.py`](research_03/python/temporal_model.py)
+- [`feasibility.py`](research_03/python/feasibility.py)
+- [`certificate_verifier.py`](research_03/python/certificate_verifier.py)
 <!-- RESEARCH_INDEX_END -->
 
 ## Research Domains
