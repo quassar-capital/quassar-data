@@ -11,13 +11,13 @@ public event-pair classification.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from enum import Enum
+from enum import StrEnum
 
 from feasibility import solve_feasibility
 from temporal_model import ConstraintEdge, TemporalProblem
 
 
-class TemporalRelation(str, Enum):
+class TemporalRelation(StrEnum):
     """Classification of the temporal relationship between two events."""
 
     BEFORE = "necessary_before"
